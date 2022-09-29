@@ -8,7 +8,7 @@ load_dotenv()
 
 my_secret = os.environ['TOKEN']
 
-client = discord.Client()
+client = discord.Client(intents=discord.Intents.default())
 intents=discord.Intents.default()
 intents.members = True
 client = commands.Bot(command_prefix="!", intents=intents, help_command=None)
