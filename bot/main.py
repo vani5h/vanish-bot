@@ -119,12 +119,5 @@ async def handle_error(ctx, error):
 async def on_command_error(ctx, error):
     if isinstance(error, CommandNotFound):
         await ctx.send("that command doesn't exist nice try zzzz")
-    elif isinstance(error, error.CommandOnCooldown):
-        await ctx.send("downtime")
-    elif isinstance(error, error.MissingPermissions):
-        await ctx.send(f":x: You can't use that command.")
-        ' Missing Arguments '
-    elif isinstance(error, commands.MissingRequiredArgument):
-        await ctx.send(f":x: Required arguments aren't passed.")
 
 client.run(my_secret)
