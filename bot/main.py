@@ -3,17 +3,19 @@ import os
 from dotenv import load_dotenv
 from discord.ext import commands
 from discord.ext.commands import CommandNotFound
+import psycopg2
 
 load_dotenv()
 
 my_secret = os.environ['TOKEN']
+DATABASE_URL = os.environ['DATABASE_URL']
 
 client = discord.Client(intents=discord.Intents.all())
 intents=discord.Intents.all()
 intents.members = True
 client = commands.Bot(command_prefix="!", intents=intents, help_command=None)
 get = discord.utils.get
-
+conn = psycopg2.connect(DATABASE_URL, sslmode = 'require')
 
 @client.event
 async def on_ready():
