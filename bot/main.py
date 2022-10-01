@@ -67,6 +67,11 @@ async def m6(ctx):
     )
     return
 
+@client.command()
+async def quit(ctx):
+    await ctx.send("Shutting down the bot")
+    return await client.logout()
+
 
 @client.event
 async def on_message(message):
