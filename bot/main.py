@@ -76,7 +76,7 @@ async def on_message(message):
             "unlocked Shadow Warp", "unlocked Implosion",
             "unlocked Wither Shield"
     ]):
-        await message.channel.send('L')
+        await message.channel.send('L..? W')
     if "vznished unlocked Necron's Handle" in message.content:
         await message.channel.send('nice hearts')
     if "psychosaur unlocked Necron's Handle" in message.content:
