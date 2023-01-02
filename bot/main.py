@@ -105,8 +105,11 @@ async def on_message(message):
         await message.channel.send('nice slayer')
     if "orjiin unlocked Necron's Handle" in message.content:
         await message.channel.send('idk gg ig') 
-    if message.author.id == 512433971037077519:
-        await message.channel.send('words')
+    formats = ['jpg', 'png', 'gif', 'svg']
+    attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
+    if message.author.id == 512433971037077519 and attachments:
+        await message.delete()
+        await message.channel.send('furry tax')
     if "!!" in message.content:
         pass
     else:
