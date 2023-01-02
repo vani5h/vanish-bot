@@ -111,12 +111,12 @@ async def on_message(message):
         await message.channel.send('idk gg ig') 
     formats = ['jpg', 'png', 'gif', 'svg', 'jpeg', 'imgur']
     attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
-    if message.author.id == 512433971037077519 and attachments:
+    if message.author.id == 259729734420791298 and attachments:
         await message.delete()
         await message.channel.send('furry tax')
     links = ['imgur.com']
     link = [word in message.content.lower() for word in links]
-    if message.author.id == 512433971037077519 and link:
+    if message.author.id == 259729734420791298 and link:
         await message.delete()
         await message.channel.send('furry tax')
     if "!!" in message.content:
