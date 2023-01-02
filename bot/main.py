@@ -107,9 +107,9 @@ async def on_message(message):
         await message.channel.send('idk gg ig') 
     formats = ['jpg', 'png', 'gif', 'svg', 'jpeg']
     attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
-    if message.author.id == 259729734420791298 and attachments:
+    if message.author.id == 374610562392260610 and attachments:
         await message.delete()
-        await message.channel.send('furry tax')
+        await message.channel.send('dream tax')
     if "!!" in message.content:
         pass
     else:
