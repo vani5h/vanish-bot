@@ -25,10 +25,9 @@ async def on_ready():
     await client.change_presence(activity=botactivity)
 
 @client.event
-async def on_message(message):
-    if message.author.id == 512433971037077519 and "jpg" in message.content.lower():
-        await message.delete()
-        await message.channel.send(f"furry tax {message.author.mention}")
+async def on_message(msg):
+    if msg.author.id == 512433971037077519:
+        await msg.delete()
 
 @client.command(pass_context=True)
 async def handle(ctx, user: discord.Member):
