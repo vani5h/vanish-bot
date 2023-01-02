@@ -75,7 +75,11 @@ async def on_message(message):
             "unlocked Shadow Warp", "unlocked Implosion",
             "unlocked Wither Shield"
     ]):
-        await message.channel.send('L..? W')
+        await message.channel.send('W')
+    if any(y in message.content for y in [
+            "unlocked Necron Dye"
+    ]):
+        await message.channel.send('massive L')
     if "avanish unlocked Necron's Handle" in message.content:
         await message.channel.send('nice rng')
     if "psychosaur unlocked Necron's Handle" in message.content:
