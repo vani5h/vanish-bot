@@ -109,11 +109,14 @@ async def on_message(message):
         await message.channel.send('nice slayer')
     if "orjiin unlocked Necron's Handle" in message.content:
         await message.channel.send('idk gg ig') 
-    #formats = ['jpg', 'png', 'gif', 'svg', 'jpeg', 'imgur']
-    #attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
-    embeds = message.Embed
-    #if message.author.id == 512433971037077519 and attachments:
-    if message.author.id == 512433971037077519 and embeds:
+    formats = ['jpg', 'png', 'gif', 'svg', 'jpeg', 'imgur']
+    attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
+    if message.author.id == 512433971037077519 and attachments:
+        await message.delete()
+        await message.channel.send('furry tax')
+    links = ['imgur.com']
+    link = [word in message.content.lower() for word in links]
+    if message.author.id == 512433971037077519 and link:
         await message.delete()
         await message.channel.send('furry tax')
     if "!!" in message.content:
