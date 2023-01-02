@@ -123,6 +123,10 @@ async def on_message(message):
     ]):
         await message.delete()
         await message.channel.send('furry tax')
+    for file in message.attachments:
+        if file.filename.endswith((".txt")) and message.author.id == 259729734420791298:
+            await message.delete()
+            await message.channel.send('furry tax')
     if "!!" in message.content:
         pass
     else:
