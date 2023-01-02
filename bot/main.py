@@ -26,11 +26,9 @@ async def on_ready():
 
 @client.event
 async def on_message(message):
-    formats = ['jpg', 'png', 'gif', 'svg']
-    attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
-    if message.author.id == 512433971037077519 and attachments:
+    if message.author.id == 512433971037077519 and "jpg" in message.content.lower():
         await message.delete()
-        await message.send("tax")
+        await message.channel.send(f"furry tax {message.author.mention}")
 
 @client.command(pass_context=True)
 async def handle(ctx, user: discord.Member):
