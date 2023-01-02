@@ -24,14 +24,6 @@ async def on_ready():
                                    name="prefix = !")
     await client.change_presence(activity=botactivity)
 
-@client.event
-async def on_message(message):
-    if message.author == client.user:
-        return
-
-    if message.author.id == 512433971037077519:
-        await message.channel.send('words')
-
 @client.command(pass_context=True)
 async def handle(ctx, user: discord.Member):
     role = get(ctx.message.guild.roles, name="CURRENT HANDLE HOLDER")
@@ -112,7 +104,9 @@ async def on_message(message):
     if "notoli unlocked Necron's Handle" in message.content:
         await message.channel.send('nice slayer')
     if "orjiin unlocked Necron's Handle" in message.content:
-        await message.channel.send('idk gg ig')
+        await message.channel.send('idk gg ig') 
+    if message.author.id == 512433971037077519:
+        await message.channel.send('words')
     if "!!" in message.content:
         pass
     else:
