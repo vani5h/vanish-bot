@@ -71,6 +71,8 @@ async def m6(ctx):
 async def on_message(message):
     if message.author == client.user:
         return
+    if message.author.bot:
+        return
     if any(x in message.content for x in [
             "unlocked Shadow Warp", "unlocked Implosion",
             "unlocked Wither Shield"
