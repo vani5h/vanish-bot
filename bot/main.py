@@ -25,9 +25,12 @@ async def on_ready():
     await client.change_presence(activity=botactivity)
 
 @client.event
-async def on_message(msg):
-    if msg.author.id == 512433971037077519:
-        await msg.delete()
+async def on_message(message):
+    if message.author == client.user:
+        return
+
+    if message.author.id == 512433971037077519:
+        await message.channel.send('words')
 
 @client.command(pass_context=True)
 async def handle(ctx, user: discord.Member):
