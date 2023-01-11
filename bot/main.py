@@ -118,7 +118,7 @@ async def on_message(message):
         await message.channel.send('furry tax')
     #links = ['imgur.com']
     #link = [word for word in message.content.lower() if word in links]
-    if message.author.id == 259729734420791298 and any(z in message.content for z in [
+    if message.author.id == 512433971037077519 and any(z in message.content for z in [
             "imgur.com", "https"
     ]):
         await message.delete()
