@@ -114,7 +114,11 @@ async def on_message(message):
     #formats = ['jpg', 'png', 'gif', 'svg', 'jpeg', 'imgur', 'webp']
     #attachments = [f for f in message.attachments if f.filename.split('.')[-1] in formats]
     attachments = message.attachments
+    embeds = message.embeds
     if message.author.id == 512433971037077519 and attachments:
+        await message.delete()
+        await message.channel.send('furry tax')
+    if message.author.id == 512433971037077519 and embeds:
         await message.delete()
         await message.channel.send('furry tax')
     #links = ['imgur.com']
