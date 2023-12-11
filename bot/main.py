@@ -77,15 +77,15 @@ async def on_message(message):
             "unlocked Shadow Warp", "unlocked Implosion",
             "unlocked Wither Shield"
     ]):
-        await message.channel.send('W')
+        await message.channel.send('W now apparently')
     if any(y in message.content for y in [
             "unlocked Necron Dye"
     ]):
         await message.channel.send('massive L')
-    if "avanish unlocked Necron's Handle" in message.content:
-        await message.channel.send('nice rng')
-    if "psychosaur unlocked Necron's Handle" in message.content:
-        await message.channel.send('nice hype')
+    if "vanishcc unlocked Necron's Handle" in message.content:
+        await message.channel.send('rng carried account')
+    if "celineum unlocked Necron's Handle" in message.content:
+        await message.channel.send('nice overflux')
     if "dce88 unlocked Necron's Handle" in message.content:
         await message.channel.send(
             'https://cdn.discordapp.com/attachments/993910132478058599/1003477088105402478/Badlion_Client_2022.07.31_-_21.02.26.27.DVR_Trim_Trim_Trim.mp4'
@@ -102,11 +102,11 @@ async def on_message(message):
         await message.channel.send('dce88: omg you are so rng cairied')
     if "Shqckwave unlocked Necron's Handle" in message.content:
         await message.channel.send(
-            'i cant believe you dropped necrons handle in teraria')
+            'idk good job')
     if "widealex unlocked Necron's Handle" in message.content:
         await message.channel.send('monkey')
     if "kirtricky unlocked Necron's Handle" in message.content:
-        await message.channel.send('quagmire')
+        await message.channel.send('Nice Bro')
     if "notoli unlocked Necron's Handle" in message.content:
         await message.channel.send('nice slayer')
     if "orjiin unlocked Necron's Handle" in message.content:
