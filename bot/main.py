@@ -7,7 +7,7 @@ from discord.ext.commands import CommandNotFound
 
 load_dotenv()
 
-my_secret = os.environ.get("TOKEN")
+my_secret = os.environ['TOKEN']
 #DATABASE_URL = os.environ['DATABASE_URL']
 
 client = discord.Client(intents=discord.Intents.all())
