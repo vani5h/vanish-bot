@@ -84,7 +84,7 @@ async def on_message(message):
         await message.channel.send('massive L')
     if "vanishcc unlocked Necron's Handle" in message.content:
         await message.channel.send('rng carried account')
-    if "celineum unlocked Necron's Handle" in message.content:
+    if "cceli unlocked Necron's Handle" in message.content:
         await message.channel.send('nice overflux')
     if "dce88 unlocked Necron's Handle" in message.content:
         await message.channel.send(
@@ -94,8 +94,8 @@ async def on_message(message):
         await message.channel.send('foxy is a furry btw')
     if "heykms unlocked Necron's Handle" in message.content:
         await message.channel.send('abubu')
-    if "nicejc123 unlocked Necron's Handle" in message.content:
-        await message.channel.send('no.  no.  no.')
+    if "JayceeSochi unlocked Necron's Handle" in message.content:
+        await message.channel.send('bring back nicejc123')
     if "LOadjoinDyou unlocked Necron's Handle" in message.content:
         await message.channel.send('omg 1b profit fr!!!')
     if "3is3 unlocked Necron's Handle" in message.content:
