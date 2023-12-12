@@ -107,8 +107,8 @@ async def on_message(message):
         await message.channel.send('monkey')
     if "kirtricky unlocked Necron's Handle" in message.content:
         await message.channel.send('Nice Bro')
-    if "notoli unlocked Necron's Handle" in message.content:
-        await message.channel.send('nice slayer')
+    if "FactorialTime unlocked Necron's Handle" in message.content:
+        await message.channel.send('regular ppl 1 furries 0')
     if "orjiin unlocked Necron's Handle" in message.content:
         await message.channel.send('idk gg ig') 
     #formats = ['jpg', 'png', 'gif', 'svg', 'jpeg', 'imgur', 'webp']
