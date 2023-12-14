@@ -35,10 +35,11 @@ async def handle(ctx, user: discord.Member):
             if role in member.roles:
                 await member.remove_roles(role)
                 await user.add_roles(role)
-                msg_2 = await ctx.send(
+                await ctx.send(
                     f"<@!{user.id}> is now officially the rng carried shitter keep yourself safe"
                 )
-                handle = msg_2.created_at
+                global handle
+                handle = datetime.now()
                 #print(msg_time)
                 #created = datetime.strptime(created_1, "%d/%m/%Y %H:%M:%S")
                 await ctx.send(f"handle dropped at: {handle} UTC")
@@ -49,8 +50,11 @@ async def handle(ctx, user: discord.Member):
 
 @client.command(pass_context=True)
 async def duration(ctx):
+    global handle
+    now = datetime.now()
+    duration = handle - now 
     await ctx.send(
-        f"it's been: {handle}"
+        f"it's been: {duration} since handle"
     )
 
 @client.command(pass_context=True)
