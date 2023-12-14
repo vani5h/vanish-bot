@@ -50,7 +50,7 @@ async def handle(ctx, user: discord.Member):
 @client.command(pass_context=True)
 async def duration(ctx):
     await ctx.send(
-        handle
+        f"it's been: {handle}"
     )
 
 @client.command(pass_context=True)
