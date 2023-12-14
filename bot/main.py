@@ -97,7 +97,7 @@ async def handle(ctx, user: discord.Member):
 async def duration(ctx):
     global handle
     then = handle
-        
+    now = datetime.now()    
     await ctx.send(
         f"it's been {getDuration(then, now)} since a handle"
     )
