@@ -3,6 +3,7 @@ import os
 from dotenv import load_dotenv
 from discord.ext import commands
 from discord.ext.commands import CommandNotFound
+from datetime import datetime
 #import psycopg2
 
 load_dotenv()
@@ -44,6 +45,13 @@ async def handle(ctx, user: discord.Member):
                 print(handle)
                 return
 
+
+
+@client.command(pass_context=True)
+async def duration(ctx):
+    await ctx.send(
+        f"{handle}"
+    )
 
 @client.command(pass_context=True)
 async def help(ctx):
