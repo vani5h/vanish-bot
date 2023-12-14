@@ -42,7 +42,7 @@ async def handle(ctx, user: discord.Member):
                 handle = msg_2.created_at
                 #print(msg_time)
                 #created = datetime.strptime(created_1, "%d/%m/%Y %H:%M:%S")
-                await ctx.send(f"handle dropped at: {handle.} UTC")
+                await ctx.send(f"handle dropped at: {handle} UTC")
                 print(handle)
                 return
 
