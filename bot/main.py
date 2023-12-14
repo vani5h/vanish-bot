@@ -22,7 +22,7 @@ get = discord.utils.get
 async def on_ready():
     print("Logged in as a bot {0.user}".format(client))
     botactivity = discord.Activity(type=discord.ActivityType.streaming,
-                                   name="prefix = !")
+                                   name="brain rot simulator")
     await client.change_presence(activity=botactivity)
 
 @client.command(pass_context=True)
@@ -39,7 +39,7 @@ async def handle(ctx, user: discord.Member):
                     f"<@!{user.id}> is now officially the rng carried shitter keep yourself safe"
                 )
                 global handle
-                handle = message.created_at(msg_2)
+                handle = msg_2.created_at
                 #print(msg_time)
                 #created = datetime.strptime(created_1, "%d/%m/%Y %H:%M:%S")
                 await ctx.send(f"handle dropped at: {handle} UTC")
@@ -52,7 +52,7 @@ async def handle(ctx, user: discord.Member):
 async def duration(ctx):
     global handle
     now = datetime.now()
-    duration = npw - handle 
+    duration = now - handle 
     await ctx.send(
         f"it's been: {duration} since handle"
     )
