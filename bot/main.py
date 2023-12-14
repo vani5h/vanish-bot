@@ -99,7 +99,7 @@ async def duration(ctx):
     then = handle
         
     await ctx.send(
-        f"it's been {getDuration(then)} since a handle"
+        f"it's been {getDuration(then, now)} since a handle"
     )
 
 @client.command(pass_context=True)
